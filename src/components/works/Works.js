@@ -9,10 +9,10 @@ import './Works.css';
 
 // Import ../../assets/recentprojects/
 import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
-import Lacalle from '../../assets/recentprojects/lacalle.png';
+import Amad from '../../assets/recentprojects/amad-furniture.png';
+import Sigaarchitect from '../../assets/recentprojects/sigaarchitect.png';
+import Detailingpatrol from '../../assets/recentprojects/detailingpatrol.png';
+import Ozztravel from '../../assets/recentprojects/ozztravel.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -36,37 +36,34 @@ export const Works = () => {
     },
     { 
       id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
-      image: `${Veritru}`,
+      title: 'Amad Furniture', 
+      description: `An simple project website built using
+      ReactJS and styled components.`,
+      alter: 'Amad Furniture',
+      image: `${Amad}`,
     },
     { 
       id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
-      image: `${Lofo}`,
+      title: 'sigaarchitect', 
+      description: `Company in the field of Design & Build services`,
+      alter: 'sigaarchitect',
+      image: `${Sigaarchitect}`,
     },
     { 
       id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
-      image: `${Startup}`,
+      title: 'Detailing Patrol', 
+      description: `Detailing patrol is a service web app Car Salon Treatments.`,
+      alter: 'Detailing Patrol',
+      image: `${Detailingpatrol}`,
     },
     { 
       id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
+      title: 'Ozztravel', 
+      description: `A website project for the travel and tour agency services
       built using Wordpress and PHP with integrated SEO tools to help
       the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
+      alter: 'Ozztravel',
+      image: `${Ozztravel}`,
     },
   ]);
 
