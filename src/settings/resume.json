@@ -6,19 +6,19 @@
         "phone": "(XXX) XXX-XXXX",
         "picture": "mt.png",
         "x_title": "Hello, I'm",
-        "job1": "Web",
-        "job2": "Developer",
-        "description": "Hello! I'm Mark! Your web development enthusiast. Always down for something new and challenging! Just like markdown, I'm here to help you create beautifully formatted websites.",
+        "job1": "Developer",
+        "job2": "UI Designer",
+        "description": "Hello! I'm Rezki! Your web development enthusiast. Always down for something new and challenging! Just like markdown, I'm here to help you create beautifully formatted websites.",
         "summary": "based in Bogor, Indonesia.",
-        "keywords": "personal,website,portfolio,template,kit,mark,tan,Rezkisuryana,webdev,web,developer,angeles,philippines,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown",
+        "keywords": "personal,website,portfolio,template,kit,Rezki,suryana,Rezkisuryana,webdev,web,developer,bogor,indonesia,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown",
         "url": "https://Rezkisuryana.vercel.app/",
         "location": {
             "address": "XX XXXXXstreet",
             "postalCode": "XXXXX",
-            "city": "Angeles",
-            "country": "Philippines",
-            "countryCode": "PH",
-            "region": "Pampanga"
+            "city": "Bogor",
+            "country": "Indonesia",
+            "countryCode": "Bogor",
+            "region": "Gunung Sindur"
         },
         "profiles": [
             {
@@ -118,7 +118,7 @@
     ],
     "languages": [
         {
-            "language": "German",
+            "language": "Bahasa",
             "fluency": "Native speaker"
         },
         {
@@ -126,7 +126,7 @@
             "fluency": "Fluent speaker"
         },
         {
-            "language": "French",
+            "language": "Arabic",
             "fluency": "Good knowledge"
         }
     ],
