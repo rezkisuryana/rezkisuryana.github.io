@@ -13,6 +13,7 @@ import Amad from '../../assets/recentprojects/amad-furniture.png';
 import Sigaarchitect from '../../assets/recentprojects/sigaarchitect.png';
 import Detailingpatrol from '../../assets/recentprojects/detailingpatrol.png';
 import Ozztravel from '../../assets/recentprojects/ozztravel.png';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -33,6 +34,7 @@ export const Works = () => {
       the background element.`,
       alter: 'React Portfolio',
       image: `${Portfolio}`,
+      url: 'https://rezkisuryana.vercel.app'
     },
     { 
       id: 2,
@@ -41,6 +43,7 @@ export const Works = () => {
       ReactJS and styled components.`,
       alter: 'Amad Furniture',
       image: `${Amad}`,
+      url: 'https://amadfurniture.netlify.app/'
     },
     { 
       id: 3,
@@ -48,6 +51,7 @@ export const Works = () => {
       description: `Company in the field of Design & Build services`,
       alter: 'sigaarchitect',
       image: `${Sigaarchitect}`,
+      url: 'https://sigaarchitect.com/staging/'
     },
     { 
       id: 4,
@@ -55,6 +59,7 @@ export const Works = () => {
       description: `Detailing patrol is a service web app Car Salon Treatments.`,
       alter: 'Detailing Patrol',
       image: `${Detailingpatrol}`,
+      url: 'https://detailingpatrol.com/'
     },
     { 
       id: 5,
@@ -64,6 +69,7 @@ export const Works = () => {
       the business ramp up its prospects and lead generation.`,
       alter: 'Ozztravel',
       image: `${Ozztravel}`,
+      url: 'https://ozztravel.id/'
     },
   ]);
 
@@ -76,9 +82,11 @@ export const Works = () => {
               <img src={ project.image } alt={ project.alter }/>
             </div>
             <div className="__content_wrapper">
-              <h3 className="title">
-                <TextDecrypt text={ project.id + '. ' + project.title } />
-              </h3>
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <h3 className="title">
+                  <TextDecrypt text={ project.id + '. ' + project.title } />
+                </h3>
+              </a>
               <p className="description">
                 { project.description }
               </p>
