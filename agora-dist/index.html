@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>MonsterAR</title>
+  <link rel="shortcut icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAPdEVYdFNvZnR3YXJlAEdvb2dsZQJuDl8AAANeSURBVDhPJZNbTxtHGIZnWa/Xa2ywIQHM0cbG9trGYMAYG2NI6YFACI4dAhSFQOwEaNWioqSpFFWJSJOKq1xUai9JhVKi0ohKiXqQetGDekCqVKnqTS/auyo/4+nYXHyjHc28z7zfO7NCCJ3OLj/rGyU+/uQhXx4dcvj5E25s32IsM0k4OIjPG6a904Mv0EE6PUrETGDTXNQIB0Kp0RlKpjg4eMw///7N82dHlK6usjC/yLmZPEODowwnM/iDXWTGhnG73QihYVUdKPJwcWlxgeL8Re598ICff/mN4+Nf2dxcZ23tCtPnzpLNjdLbF8GM+XC6dE41NWLRdBRFQdcloNnTxNLyIvMLl/jqm6958eI/br77DuXrJeYKM8QSbVwpz+LpqGc4PcDYeIZObxuKKqR9WdVB1viZLA92dzj+/Sc+e7LP5ZVVCvPTfLS3xf7R+7T7G3E21FFcmsPd7ERoCkK1IAx7JQhBh9fD1vYm3373jD//+oOl11fInRkhPGSlJ6ESjHmx2GqZnHpJgk40VYBVs2OxWHE1OOkbiBKLR/n+xx+4c3eHZGqI6fMTjE8mMSMxDMONx+OjEryoUWVVXMiJoqjVULzdXVwtlzh8+gWf7j+qZtOX6CcSixIKmXR0+mloaJd9S4CQp5+0L6oAzWKgqhotrc3M5s9y/8MdgmE/qZFBBgbjuF21tLa2VIWq3CukRpXOpQsJkBDdWovNkOHIeSXlm7e2uXf/Lq+8PEFf3MSwqcSiQa6Xr2G329EN6aCmkoMcqoDKnVZa0WzceO82Y7kJUukRmk43cqrRzUKxwMrlZXLZMfkOBHUNKkadBFg1VYo1bHYJkAu+sI9HB3tce3ONQMjLyMgwF+YKXMxfwGEzKBbyhMJemts1Sm/NICyqDYtVkx+SJgGjUxH2nu4yu5RkdSPPxmaZbGacuNlLW3MLUTNCl6+J7mgdpa3XELpN9l15VYbAn6jjjdtzzK+nePx8l9Lb54nGQ9TXuwkGeqg17JhmlN5+k9ZuO84Wqav8GIousDQKKUwyUQxSKGfZurPMq8U0oV4/uVyOgN+HRzqw6Q4cLjcWh0Ik2SMBsoWK/cligNH8aeITTbT12UlPmQT6W0ikeslk07S3eXC5XNTaXRhO18kN6IL/AZ8KmJVSqJjsAAAAAElFTkSuQmCC">
+  
+  <script type="module" crossorigin src="./assets/index-5e713cb9.js"></script>
+  <link rel="stylesheet" href="./assets/index-88d533a4.css">
+</head>
+
+<body>
+  
+
+  <div id="unity-container" class="unity-desktop">
+    <div id="front-parent">
+      <canvas id="unity-canvas" width=100% height=100%></canvas>
+      <div id="video-container"></div>
+    </div>
+    <div id="unity-loading-bar">
+      <div id="unity-logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+    </div>
+    <div id="unity-warning"> </div>
+    <!-- <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Metaverse</div>
+      </div> -->
+    <div id="mobile-fullscreen">
+      <p>Sentuh layar untuk bermain di layar penuh</p>
+    </div>
+    <div class="row" style="display: none;">
+      <div>
+        <button type="button" id="join">Join</button>
+        <button type="button" id="leave">Leave</button>
+      </div>
+      <br>
+      <div id="message"></div>
+
+      <input type="text" id="textbox" />
+
+      <button type="button" id="inItScreen">Share Screen</button>
+      <button type="button" id="muteVideo">Mute Video</button>
+      <button type="button" id="muteAudio">Mute Audio</button>
+      <br><label> Local Audio Level :</label>
+      <input type="range" min="0" id="localAudioVolume" max="100" step="1"><br>
+      <label> Remote Audio Level :</label>
+      <input type="range" min="0" id="remoteAudioVolume" max="100" step="1">
+    </div>
+
+  </div>
+  <script>
+    var userId = '';
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingBar = document.querySelector("#unity-loading-bar");
+    var progressBarFull = document.querySelector("#unity-progress-bar-full");
+    // var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+    var fullscreenButton = document.querySelector("#mobile-fullscreen");
+    var warningBanner = document.querySelector("#unity-warning");
+    var displayMode = "none";
+
+    // Shows a temporary message banner/ribbon for a few seconds, or
+    // a permanent error message on top of the canvas if type=='error'.
+    // If type=='warning', a yellow highlight color is used.
+    // Modify or remove this function to customize the visually presented
+    // way that non-critical warnings and error messages are presented to the
+    // user.
+    function unityShowBanner(msg, type) {
+      function updateBannerVisibility() {
+        warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+      }
+      var div = document.createElement('div');
+      div.innerHTML = msg;
+      warningBanner.appendChild(div);
+      if (type == 'error') div.style = 'background: red; padding: 10px;';
+      else {
+        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+        setTimeout(function () {
+          warningBanner.removeChild(div);
+          updateBannerVisibility();
+        }, 5000);
+      }
+      updateBannerVisibility();
+    }
+
+    var buildUrl = "./Build";
+      var loaderUrl = buildUrl + "/metaverse-agora4.3.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/metaverse-agora4.3.data.gz",
+        frameworkUrl: buildUrl + "/metaverse-agora4.3.framework.js.gz",
+        codeUrl: buildUrl + "/metaverse-agora4.3.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "MonsterAR",
+        productName: "Metaverse",
+        productVersion: "4.3",
+        showBanner: unityShowBanner,
+      };
+
+    // By default Unity keeps WebGL canvas render target size matched with
+    // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+    // Set this to false if you want to decouple this synchronization from
+    // happening inside the engine, and you would instead like to size up
+    // the canvas DOM size and WebGL render target sizes yourself.
+    // config.matchWebGLToCanvasSize = false;
+
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      // Mobile device style: fill the whole browser client area with the game canvas:
+
+      var meta = document.createElement('meta');
+      meta.name = 'viewport';
+      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+      document.getElementsByTagName('head')[0].appendChild(meta);
+      container.className = "unity-mobile";
+      canvas.className = "unity-mobile";
+
+      displayMode = "flex";
+      // To lower canvas resolution on mobile devices to gain some
+      // performance, uncomment the following line:
+      // config.devicePixelRatio = 1;
+
+      // unityShowBanner('WebGL builds are not supported on mobile devices.');
+    } else {
+      // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+
+      displayMode = "none";
+
+      canvas.style.width = "100%";
+      canvas.style.height = "100%";
+    }
+
+    loadingBar.style.display = "block";
+
+    var myGameInstance = null;
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        progressBarFull.style.width = 100 * progress + "%";
+      }).then((unityInstance) => {
+        myGameInstance = unityInstance;
+        loadingBar.style.display = "none";
+        fullscreenButton.style.display = displayMode;
+        // document.getElementById("join").click();
+        fullscreenButton.onclick = () => {
+          // unityInstance.SetFullscreen(1);
+          let elem1 = document.getElementById('front-parent');
+          OpenFullscreen(elem1);
+          screen.orientation.lock('landscape');
+        };
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+    document.body.appendChild(script);
+
+    function OpenFullscreen(elem) {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+
+    function Load(nama){
+      userId = nama;
+      console.log("INI NAMAaa "+ userId);
+    }
+  </script>
+</body>
+
+</html>
