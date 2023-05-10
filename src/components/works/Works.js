@@ -11,7 +11,7 @@ import './Works.css';
 import Portfolio from '../../assets/recentprojects/react-portfolio.png';
 import Amad from '../../assets/recentprojects/amad-furniture.png';
 import Sigaarchitect from '../../assets/recentprojects/sigaarchitect.png';
-import Detailingpatrol from '../../assets/recentprojects/detailingpatrol.png';
+import SolutionAdv from '../../assets/recentprojects/solution-adv.png';
 import Ozztravel from '../../assets/recentprojects/ozztravel.png';
 import { Link } from "react-router-dom";
 
@@ -51,15 +51,15 @@ export const Works = () => {
       description: `Company in the field of Design & Build services`,
       alter: 'sigaarchitect',
       image: `${Sigaarchitect}`,
-      url: 'https://sigaarchitect.com/staging/'
+      url: 'https://sigaarchitect.com/'
     },
     { 
       id: 4,
-      title: 'Detailing Patrol', 
-      description: `Detailing patrol is a service web app Car Salon Treatments.`,
-      alter: 'Detailing Patrol',
-      image: `${Detailingpatrol}`,
-      url: 'https://detailingpatrol.com/'
+      title: 'Solution ADV', 
+      description: `Landing page for a custom booth service provider for events or UMKM`,
+      alter: 'Solution ADV',
+      image: `${SolutionAdv}`,
+      url: 'https://solution-adv.com/'
     },
     { 
       id: 5,
