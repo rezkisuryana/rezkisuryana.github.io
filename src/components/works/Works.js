@@ -59,7 +59,7 @@ export const Works = () => {
       description: `Landing page for a custom booth service provider for events or UMKM`,
       alter: 'Solution ADV',
       image: `${SolutionAdv}`,
-      url: 'https://solution-adv.com/'
+      url: 'https://www.solution-adv.com/'
     },
     { 
       id: 5,
