@@ -13,6 +13,7 @@ import Amad from '../../assets/recentprojects/amad-furniture.png';
 import Sigaarchitect from '../../assets/recentprojects/sigaarchitect.png';
 import SolutionAdv from '../../assets/recentprojects/solution-adv.png';
 import Ozztravel from '../../assets/recentprojects/ozztravel.png';
+import Srirejekimandiri from '../../assets/recentprojects/srirejekimandiri.png';
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -71,6 +72,16 @@ export const Works = () => {
       image: `${Ozztravel}`,
       url: 'https://ozztravel.id/'
     },
+    { 
+      id: 6,
+      title: 'Sri Rejeki Mandiri', 
+      description: `A website project for the company profile welding services
+      built using Wordpress and PHP with integrated SEO tools to help
+      the business ramp up its prospects and lead generation.`,
+      alter: 'srirejekimandiri',
+      image: `${Srirejekimandiri}`,
+      url: 'https://srirejekimandiri.com/'
+    }
   ]);
 
   return (
