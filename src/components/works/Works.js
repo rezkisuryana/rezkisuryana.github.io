@@ -9,11 +9,12 @@ import './Works.css';
 
 // Import ../../assets/recentprojects/
 import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Amad from '../../assets/recentprojects/amad-furniture.png';
+import ItsChocnut from '../../assets/recentprojects/itschocnut.png';
 import Sigaarchitect from '../../assets/recentprojects/sigaarchitect.png';
 import SolutionAdv from '../../assets/recentprojects/solution-adv.png';
 import Ozztravel from '../../assets/recentprojects/ozztravel.png';
 import Srirejekimandiri from '../../assets/recentprojects/srirejekimandiri.png';
+import mandiristeel from '../../assets/recentprojects/mandiristeel.png';
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -39,12 +40,11 @@ export const Works = () => {
     },
     { 
       id: 2,
-      title: 'Amad Furniture', 
-      description: `An simple project website built using
-      ReactJS and styled components.`,
-      alter: 'Amad Furniture',
-      image: `${Amad}`,
-      url: 'https://amadfurniture.netlify.app/'
+      title: 'ItsChocnut', 
+      description: `ItsChocNut landing page is a specifically designed homepage to provide information about ItsChocNut's products and services targeted towards the business-to-business (B2B) market.`,
+      alter: 'ItsChocnut',
+      image: `${ItsChocnut}`,
+      url: 'https://itschocnut.com/pemesanan/'
     },
     { 
       id: 3,
@@ -81,6 +81,14 @@ export const Works = () => {
       alter: 'srirejekimandiri',
       image: `${Srirejekimandiri}`,
       url: 'https://srirejekimandiri.com/'
+    },
+    { 
+      id: 7,
+      title: 'Mandiri Steel Group', 
+      description: `The landing page is designed to provide visitors with easy access to essential information about the company's offerings, including various grades, sizes, and specifications of steel and iron materials.`,
+      alter: 'mandiristeelgroup',
+      image: `${mandiristeel}`,
+      url: 'https://mandiristeelgroup.com/'
     }
   ]);
 
