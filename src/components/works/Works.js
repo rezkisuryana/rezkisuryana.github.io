@@ -8,13 +8,12 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import './Works.css';
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import ItsChocnut from '../../assets/recentprojects/itschocnut.png';
-import Sigaarchitect from '../../assets/recentprojects/sigaarchitect.png';
-import SolutionAdv from '../../assets/recentprojects/solution-adv.png';
-import Ozztravel from '../../assets/recentprojects/ozztravel.png';
-import Srirejekimandiri from '../../assets/recentprojects/srirejekimandiri.png';
-import mandiristeel from '../../assets/recentprojects/mandiristeel.png';
+import ReactPortfolioImg from '../../assets/recentprojects/rezki.webp';
+import GagasStudioImg from '../../assets/recentprojects/gagas.webp';
+import UmrohHajiImg from '../../assets/recentprojects/umroh.webp';
+import SungaiSailImg from '../../assets/recentprojects/sungaisail.webp';
+import PPDBWebAppImg from '../../assets/recentprojects/ppdb.webp';
+
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -34,61 +33,41 @@ export const Works = () => {
       description: `Designed and developed a ReactJS portfolio 
       with fancy 3D animations using Three.js for 
       the background element.`,
-      alter: 'React Portfolio',
-      image: `${Portfolio}`,
+      alter: 'React Portfolio Image',
+      image: `${ReactPortfolioImg}`,
       url: 'https://rezkisuryana.vercel.app'
     },
     { 
       id: 2,
-      title: 'ItsChocnut', 
-      description: `ItsChocNut landing page is a specifically designed homepage to provide information about ItsChocNut's products and services targeted towards the business-to-business (B2B) market.`,
-      alter: 'ItsChocnut',
-      image: `${ItsChocnut}`,
-      url: 'https://itschocnut.com/pemesanan/'
+      title: 'Gagas Studio', 
+      description: `A creative studio that provides design and branding services. built using customize wordpress.`,
+      alter: 'Gagas Studio Image',
+      image: `${GagasStudioImg}`,
+      url: 'https://gagasstudio.co.id'
     },
     { 
       id: 3,
-      title: 'sigaarchitect', 
-      description: `Company in the field of Design & Build services`,
-      alter: 'sigaarchitect',
-      image: `${Sigaarchitect}`,
-      url: 'https://sigaarchitect.com/'
+      title: 'PPDB Web App', 
+      description: `An online admission (PPDB) web application built using React Js and PHP Laravel. It is designed for educational institutions to manage the admission process, complete with SEO optimization and a user-friendly interface.`,
+      alter: 'PPDB Web App Image',
+      image: `${PPDBWebAppImg}`,
+      url: 'https://ppdbabudzar.evolusidigital.id/'
     },
     { 
       id: 4,
-      title: 'Solution ADV', 
-      description: `Landing page for a custom booth service provider for events or UMKM`,
-      alter: 'Solution ADV',
-      image: `${SolutionAdv}`,
-      url: 'https://www.solution-adv.com/'
+      title: 'Umroh Haji Abu Dzar', 
+      description: `A website for a travel agency specializing in Umrah and Hajj services, built with WordPress.`,
+      alter: 'Umroh Haji Abu Dzar Image',
+      image: `${UmrohHajiImg}`,
+      url: 'https://umrohhajiabudzar.com/'
     },
     { 
       id: 5,
-      title: 'Ozztravel', 
-      description: `A website project for the travel and tour agency services
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Ozztravel',
-      image: `${Ozztravel}`,
-      url: 'https://ozztravel.id/'
-    },
-    { 
-      id: 6,
-      title: 'Sri Rejeki Mandiri', 
-      description: `A website project for the company profile welding services
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'srirejekimandiri',
-      image: `${Srirejekimandiri}`,
-      url: 'https://srirejekimandiri.com/'
-    },
-    { 
-      id: 7,
-      title: 'Mandiri Steel Group', 
-      description: `The landing page is designed to provide visitors with easy access to essential information about the company's offerings, including various grades, sizes, and specifications of steel and iron materials.`,
-      alter: 'mandiristeelgroup',
-      image: `${mandiristeel}`,
-      url: 'https://mandiristeelgroup.com/'
+      title: 'SungaiSail', 
+      description: `Corporate website built with WordPress for a general contractor company, focusing on delivering high-quality results and timely project completion.`,
+      alter: 'SungaiSail Image',
+      image: `${SungaiSailImg}`,
+      url: 'https://sungaisail.id/'
     }
   ]);
 
@@ -103,7 +82,7 @@ export const Works = () => {
             <div className="__content_wrapper">
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 className="title">
-                  <TextDecrypt text={ project.id + '. ' + project.title } />
+                  <TextDecrypt text={ project.title } />
                 </h3>
               </a>
               <p className="description">
