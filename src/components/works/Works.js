@@ -10,9 +10,11 @@ import './Works.css';
 // Import ../../assets/recentprojects/
 import ReactPortfolioImg from '../../assets/recentprojects/rezki.webp';
 import GagasStudioImg from '../../assets/recentprojects/gagas.webp';
-import UmrohHajiImg from '../../assets/recentprojects/umroh.webp';
 import SungaiSailImg from '../../assets/recentprojects/sungaisail.webp';
 import PPDBWebAppImg from '../../assets/recentprojects/ppdb.webp';
+import YabahitImg from '../../assets/recentprojects/yabahit.webp';
+import PusakaImg from '../../assets/recentprojects/pusakapest.webp';
+import DuacahayaImg from '../../assets/recentprojects/duacahaya.webp';
 
 import { Link } from "react-router-dom";
 
@@ -47,6 +49,14 @@ export const Works = () => {
     },
     { 
       id: 3,
+      title: 'Pusaka Pest', 
+      description: `Developed using WordPress, this website features a seamless user experience, SEO optimization, and an intuitive interface for easy navigation.`,
+      alter: 'Pusakapest Image',
+      image: `${PusakaImg}`,
+      url: 'https://pusakapest.com'
+    },
+    { 
+      id: 4,
       title: 'PPDB Web App', 
       description: `An online admission (PPDB) web application built using React Js and PHP Laravel. It is designed for educational institutions to manage the admission process, complete with SEO optimization and a user-friendly interface.`,
       alter: 'PPDB Web App Image',
@@ -54,15 +64,23 @@ export const Works = () => {
       url: 'https://ppdbabudzar.evolusidigital.id/'
     },
     { 
-      id: 4,
-      title: 'Umroh Haji Abu Dzar', 
-      description: `A website for a travel agency specializing in Umrah and Hajj services, built with WordPress.`,
-      alter: 'Umroh Haji Abu Dzar Image',
-      image: `${UmrohHajiImg}`,
-      url: 'https://umrohhajiabudzar.com/'
+      id: 5,
+      title: 'Dua Cahaya Travel', 
+      description: `Developed with WordPress, this site provides comprehensive information, intuitive navigation, and a professional design to attract prospective pilgrims.`,
+      alter: 'Dua Cahaya Travel Image',
+      image: `${DuacahayaImg}`,
+      url: 'https://duacahaya.com'
     },
     { 
-      id: 5,
+      id: 6,
+      title: 'Yabahit', 
+      description: `A corporate website for Yayasan Yabahit, focused on providing education for orphaned children and Quran memorization. Built with WordPress, the website features a professional design and SEO optimization for easy access.`,
+      alter: 'Yabahit Image',
+      image: `${YabahitImg}`,
+      url: 'https://yabahit.or.id/'
+    },
+    { 
+      id: 7,
       title: 'SungaiSail', 
       description: `Corporate website built with WordPress for a general contractor company, focusing on delivering high-quality results and timely project completion.`,
       alter: 'SungaiSail Image',

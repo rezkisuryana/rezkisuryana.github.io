@@ -30,7 +30,7 @@ export const Resume = () => {
     <Link
       color='inherit'
       underline='none'
-      href=''
+      href='https://www.linkedin.com/in/rezky-suryana/'
       // href= {`${ResumePDF}`}
       target='_blank'
       rel='noopener noreferrer'
