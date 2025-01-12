@@ -13,7 +13,7 @@ import GagasStudioImg from '../../assets/recentprojects/gagas.webp';
 import SungaiSailImg from '../../assets/recentprojects/sungaisail.webp';
 import PPDBWebAppImg from '../../assets/recentprojects/ppdb.webp';
 import YabahitImg from '../../assets/recentprojects/yabahit.webp';
-import PusakaImg from '../../assets/recentprojects/pusakapest.webp';
+import PusakaImg from '../../assets/recentprojects/pusakapest2.webp';
 import DuacahayaImg from '../../assets/recentprojects/duacahaya.webp';
 
 import { Link } from "react-router-dom";
