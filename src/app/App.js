@@ -5,7 +5,7 @@ import { HelmetMeta } from "./HelmetMeta";
 import { ThemeProvider } from "../components/theme/ThemeProvider";
 import { CssBaseline } from "@material-ui/core";
 import { logCredits } from "../utils/logCredits";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/react"
 
 import { Home } from "../pages/Home";
 
@@ -24,9 +24,9 @@ export const App = () => {
               <Route path="/" exact component={Home} />
               {/* <Route path="/resume" component={Resume} /> */}
               <Route path="*" component={PageNotFound} />
-              <Analytics />
           </Switch>
         </Router>
+        <Analytics />
       </ThemeProvider>
     );
 };
