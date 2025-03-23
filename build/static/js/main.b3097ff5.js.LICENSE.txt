@@ -50,7 +50,6 @@ and limitations under the License.
  * LICENSE file in the root directory of this source tree.
  */
 
-<<<<<<<< HEAD:build/static/js/main.b3097ff5.js.LICENSE.txt
 /**
  * @license React
  * react-dom-server.browser.production.min.js
@@ -93,9 +92,6 @@ and limitations under the License.
 
 /**
  * @license React
-========
-/** @license React v0.19.1
->>>>>>>> c6a16d29d3a832ed00e54187cb8781e3b4044c72:build/static/js/main.49466dc0.js.LICENSE.txt
  * scheduler.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -121,45 +117,6 @@ and limitations under the License.
  * LICENSE file in the root directory of this source tree.
  */
 
-<<<<<<<< HEAD:build/static/js/main.b3097ff5.js.LICENSE.txt
-========
-/** @license React v16.14.0
- * react-dom-server.browser.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/** @license React v16.14.0
- * react-dom.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/** @license React v16.14.0
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/** @license React v16.14.0
- * react.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
->>>>>>>> c6a16d29d3a832ed00e54187cb8781e3b4044c72:build/static/js/main.49466dc0.js.LICENSE.txt
 /** @license React v17.0.2
  * react-is.production.min.js
  *
