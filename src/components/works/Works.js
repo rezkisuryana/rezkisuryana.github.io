@@ -15,6 +15,7 @@ import PPDBWebAppImg from '../../assets/recentprojects/ppdb.webp';
 import YabahitImg from '../../assets/recentprojects/yabahit.webp';
 import PusakaImg from '../../assets/recentprojects/pusakapest2.webp';
 import DuacahayaImg from '../../assets/recentprojects/duacahaya.webp';
+import GarudaUtamaPersadaImg from '../../assets/recentprojects/garuda.webp';
 
 import { Link } from "react-router-dom";
 
@@ -65,6 +66,14 @@ export const Works = () => {
     },
     { 
       id: 5,
+      title: 'Garuda Utama Persada', 
+      description: `Garuda Utama Persada was developed using WordPress, featuring an intuitive navigation system, professional design, and responsive layout.`,
+      alter: 'Garuda Utama Persada Image',
+      image: `${GarudaUtamaPersadaImg}`,
+      url: 'http://garudautamapersada.co.id/'
+    },
+    { 
+      id: 6,
       title: 'Dua Cahaya Travel', 
       description: `Developed with WordPress, this site provides comprehensive information, intuitive navigation, and a professional design to attract prospective pilgrims.`,
       alter: 'Dua Cahaya Travel Image',
@@ -72,7 +81,7 @@ export const Works = () => {
       url: 'https://duacahaya.com'
     },
     { 
-      id: 6,
+      id: 7,
       title: 'Yabahit', 
       description: `A corporate website for Yayasan Yabahit, focused on providing education for orphaned children and Quran memorization. Built with WordPress, the website features a professional design and SEO optimization for easy access.`,
       alter: 'Yabahit Image',
@@ -80,7 +89,7 @@ export const Works = () => {
       url: 'https://yabahit.or.id/'
     },
     { 
-      id: 7,
+      id: 8,
       title: 'SungaiSail', 
       description: `Corporate website built with WordPress for a general contractor company, focusing on delivering high-quality results and timely project completion.`,
       alter: 'SungaiSail Image',
