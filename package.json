@@ -1,5 +1,5 @@
 {
-  "name": "folio-v1",
+  "name": "myportfoliov2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,7 +16,6 @@
     "@jridgewell/sourcemap-codec": "^1.5.0",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@vercel/analytics": "^0.1.11",
-    "blobity": "^0.2.3",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "framer-motion": "^10.6.1",
@@ -31,7 +30,7 @@
     "touch-cli": "^0.0.1"
   },
   "devDependencies": {
-    "@types/node": "18.15.0",
+    "@types/node": "^18.15.0",
     "@types/react": "18.0.28",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",

@@ -1,6 +1,6 @@
 "use client";
 import Hero from "./hero-section/Hero";
-import useBlobity from "blobity/lib/react/useBlobity";
+// import useBlobity from "blobity/lib/react/useBlobity";
 import { useEffect } from "react";
 import { ScrollerMotion } from "scroller-motion";
 import PreLoader from "./animations/PreLoader/PreLoader";
@@ -20,14 +20,14 @@ import Footer from "./footer/Footer";
 // const Footer = dynamic(() => import("./footer/Footer"));
 
 export default function Home() {
-  const blobityInstance = useBlobity(initialBlobityOptions);
+  // const blobityInstance = useBlobity(initialBlobityOptions);
 
-  useEffect(() => {
-    if (blobityInstance.current) {
-      // @ts-ignore for debugging purposes or playing around
-      window.blobity = blobityInstance.current;
-    }
-  }, [blobityInstance]);
+  // useEffect(() => {
+  //   if (blobityInstance.current) {
+  //     // @ts-ignore for debugging purposes or playing around
+  //     window.blobity = blobityInstance.current;
+  //   }
+  // }, [blobityInstance]);
 
   useEffect(() => {
     window.scrollTo({
