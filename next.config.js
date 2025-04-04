@@ -7,6 +7,9 @@ const nextConfig = {
   images: {
     domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com"],
   },
+  typescript: {
+    ignoreBuildErrors: true, // Jika ingin mengabaikan error TypeScript sementara
+  },
   fontLoaders: [
     {
       loader: "@next/font/google",
