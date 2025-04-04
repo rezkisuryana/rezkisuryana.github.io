@@ -13,7 +13,7 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: "Rezki Suryana — Frontend Engineer",
   description:
-    "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Bogor, Indonesia.",
+    "Frontend Engineer and Web Designer, currently at Monster Group. Focused on interfaces and experiences, working remotely from Bogor, Indonesia.",
   generator: "Next.js",
   applicationName: "Rezki Suryana",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rezki Suryana — Frontend Engineer",
     description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+      "Frontend Engineer and Web Designer, currently at Monster Group. Focused on interfaces and experiences, working remotely from Bogor, Indonesia.",
     url: "https://rezkisuryana.vercel.app/",
     siteName: "www.rezkisuryana.vercel.app",
     images: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rezki Suryana — Frontend Engineer",
     description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Bogor, Indonesia.",
+      "Frontend Engineer and Web Designer, currently at Monster Group. Focused on interfaces and experiences, working remotely from Bogor, Indonesia.",
     creator: "victorwill__",
     creatorId: "1243720976552144897",
     images: [
