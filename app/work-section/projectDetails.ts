@@ -67,6 +67,17 @@ export const devProjects = [
   },
   {
     id: 5,
+    name: "Sakha Stainless",
+    description:
+      "A professional corporate e-commerce website developed for Sakha Stainless to promote and sell stainless steel products, featuring a scalable product catalog and a user-friendly content management system.",
+    technologies: ["Woo Commerce", "Elementor"],
+    github: "https://github.com/",
+    demo: "https://sakhastainless.com/",
+    image: require(".//../../public/projects/sakha.png"),
+    available: true,
+  },
+  {
+    id: 6,
     name: "Dua Cahaya Travel",
     description:
       "This site provides comprehensive information, intuitive navigation, and a professional design to attract prospective pilgrims.",
@@ -77,7 +88,7 @@ export const devProjects = [
     available: true,
   },
   {
-    id: 6,
+    id: 7,
     name: "Yabahit",
     description:
       "A corporate website for Yayasan Yabahit, focused on providing education for orphaned children and Quran memorization.",
@@ -87,9 +98,8 @@ export const devProjects = [
     image: require(".//../../public/projects/yabahit.png"),
     available: true,
   },
-
   {
-    id: 7,
+    id: 8,
     name: "Sungaisail",
     description:
       "Corporate website for a general contractor company, focusing on delivering high-quality results and timely project completion.",

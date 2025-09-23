@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "www.rezkisuryana.vercel.app",
     images: [
       {
-        url: "../public/thumbnail.png",
+        url: "https://raw.githubusercontent.com/rezkisuryana/rezkisuryana.github.io/main/public/thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Rezki Suryana — Frontend Engineer",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     creator: "victorwill__",
     creatorId: "1243720976552144897",
     images: [
-      "../public/thumbnail.png",
+      "https://raw.githubusercontent.com/rezkisuryana/rezkisuryana.github.io/main/public/thumbnail.png",
     ],
   },
   robots: {
