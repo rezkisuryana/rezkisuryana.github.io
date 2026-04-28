@@ -23,13 +23,13 @@ export const devProjects = [
   },
   {
     id: 1,
-    name: "Gagas Studio",
+    name: "Digital Product AI Assistant",
     description:
-      "This is a website for a creative studio that provides design and branding services.",
-    technologies: ["Wordpress", "Elementor"],
-    github: "",
-    demo: "https://gagasstudio.co.id/",
-    image: require(".//../../public/projects/gagas.png"),
+      "A web application that helps Indonesian creators, freelancers, and solopreneurs instantly create high-quality digital products using artificial intelligence.",
+    technologies: ["React", "Tailwind CSS", "Typescript"],
+    github: "https://github.com/rezkisuryana/dipa-ai",
+    demo: "https://dipa-ai.lovable.app/",
+    image: require("/public/projects/dipa.png"),
     available: true,
   },
   {
@@ -45,13 +45,13 @@ export const devProjects = [
   },
   {
     id: 3,
-    name: "AbuDzar PPDB",
+    name: "Gagas Studio",
     description:
-      "An online admission web application. It is designed for educational institutions to manage the admission process, complete with SEO optimization and a user-friendly interface.",
-    technologies: ["React", "Tailwind CSS", "Laravel"],
-    github: "https://github.com/",
-    demo: "https://ppdbabudzar.evolusidigital.id/",
-    image: require(".//../../public/projects/ppdb.png"),
+      "This is a website for a creative studio that provides design and branding services.",
+    technologies: ["Wordpress", "Elementor"],
+    github: "",
+    demo: "https://gagasstudio.co.id/",
+    image: require(".//../../public/projects/gagas.png"),
     available: true,
   },
   {
@@ -109,52 +109,4 @@ export const devProjects = [
     image: require(".//../../public/projects/sungaisail.png"),
     available: true,
   }
-];
-
-export const designProjects = [
-  {
-    id: 1,
-    name: "Hebron Statup Lab Website",
-    description:
-      "SkyWatch is a convenient and user-friendly tool that allows you to quickly and easily check the current.",
-    technologies: ["UX Research", "UI Design", "Prototyping"],
-    github: "",
-    demo: "",
-    image: "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Fhsl.webp&w=1920&q=75",
-    available: false,
-  },
-  {
-    id: 2,
-    name: "RAGS Scrubs Website",
-    description:
-      "An image generator website that allows users to generate, combine, and download images.",
-    technologies: ["UX Research", "UI Design", "Prototyping"],
-    github: "",
-    demo: "",
-    image: "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Frags.webp&w=1920&q=75",
-    available: false,
-  },
-  {
-    id: 3,
-    name: "Crown Branding Agency Website",
-    description:
-      "A website that reduces the length of your URL using Bit.ly's API",
-    technologies: ["UX Research", "UI Design", "Prototyping"],
-    github: "",
-    demo: "",
-    image:
-      "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Fcrown.webp&w=1920&q=75",
-    available: false,
-  },
-  {
-    id: 4,
-    name: "Titi Mobile App",
-    description:
-      "TMTM helps you find people who are headed to the same location as you, so you can share a ride and split the cost with them.",
-    technologies: ["UX Research", "UI Design", "Prototyping"],
-    github: "",
-    demo: "",
-    image: "/_next/image?url=%2F..%2Fpublic%2Fprojects%2Ftiti.webp&w=1920&q=75",
-    available: false,
-  },
 ];
