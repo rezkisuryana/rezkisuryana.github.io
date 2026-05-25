@@ -12,13 +12,13 @@ export type ProjectProps = {
 export const devProjects = [
   {
     id: 0,
-    name: "Portfolio V1",
+    name: "Salaf Jobs",
     description:
-      "Portfolio website for Rezki Suryana. This is the previous version, designed and developed using ReactJS with immersive 3D animations powered by Three.js for the background elements.",
-    technologies: ["React", "Tailwind CSS", "Three JS"],
-    github: "https://github.com/rezkisuryana/rezkisuryana.github.io",
-    demo: "https://rezki.vercel.app/",
-    image: require(".//../../public/projects/rezki.png"),
+      "a scalable job platform featuring dynamic job listings, advanced search and filtering, responsive user interfaces, authentication workflows, reusable component architecture, and SEO optimization.",
+    technologies: ["React", "Tailwind CSS", "Next JS"],
+    github: "https://github.com/rezkisuryana/salaf-jobs-next",
+    demo: "https://salaf-jobs.vercel.app",
+    image: require(".//../../public/projects/salafjobs.png"),
     available: true,
   },
   {
