@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Syne } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -9,6 +9,11 @@ const syne = Syne({
   display: "block",
   weight: ["400", "500", "600", "700", "800"],
 });
+
+export const viewport: Viewport = {
+  colorScheme: "dark",
+  themeColor: "#0E1016",
+};
 
 export const metadata: Metadata = {
   title: "Rezki Suryana — Frontend Engineer",
@@ -35,7 +40,6 @@ export const metadata: Metadata = {
     "frontend developer portfolio",
     "creative developer portfolio",
   ],
-  colorScheme: "dark",
   openGraph: {
     title: "Rezki Suryana — Frontend Engineer",
     description:

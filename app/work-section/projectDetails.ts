@@ -29,7 +29,7 @@ export const devProjects = [
     technologies: ["React", "Tailwind CSS", "Typescript"],
     github: "https://github.com/rezkisuryana/dipa-ai",
     demo: "https://dipa-ai.lovable.app/",
-    image: require("/public/projects/dipa.png"),
+    image: require(".//../../public/projects/dipa.png"),
     available: true,
   },
   {
